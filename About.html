@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>About</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+	<style type="text/css">
+
+	
+		
+		* {
+			box-sizing: border-box;
+			padding: 0;
+			margin: 0;
+
+		}
+		body {
+			font-family: 'Noto Sans KR', sans-serif;
+		}
+
+		.header {
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 800;
+			position: fixed;
+			border: 1px solid rgb(255, 255, 255);
+			background-color: white;
+			display: flex;
+			align-items:center;
+    		margin-right: auto;
+    		margin-left: auto;
+    		flex-wrap: nowrap;
+    		width: 100vw;
+    		justify-content: space-between;
+			background: rgb(0, 0, 0);
+    		
+			z-index: 10;
+
+		}
+
+		.header img {
+			height: 3.3vw;
+			float: left;
+		}
+
+
+		.header ul{
+			list-style: none;
+			display: flex;
+		}
+
+
+		.header li {
+			
+			border-left:2px solid rgb(255, 255, 255); 
+			padding-left: 20px;
+			
+		}
+
+		.header a{
+			color: inherit;
+			font-size: 1em;
+			text-decoration: none;
+			line-height: 3.38vw;
+			color: #fff;
+
+		}
+
+		.header li:hover{
+			background-color: #2340AD;
+			color: white;
+
+		}
+
+		.header li:not(:last-child) {
+			padding-right: 20px;
+		}
+
+		.header li:nth-child(6) {
+			border-right: 2px solid rgb(255, 255, 255);
+			padding-right: 1.04vw; 
+			
+
+		}
+
+		.header-svg  {
+			margin-top: 5.2vw;
+			margin-left: 5.72vw;
+		
+		}
+
+		.cont{
+			
+			height: 100vw;
+			padding-top:3.9vw;
+		}
+
+		.logo{
+			margin-left: 15.2vw;
+			padding-left: 20px;
+			padding-right: 20px;
+			
+		}
+
+		.guest{
+			margin-right: 15.7vw;
+		}
+
+		.cont{
+			height: 1940px;
+			padding-top: 75px;
+		}
+
+
+
+		.banner{
+			widows: 100vh;
+			height: 850px;
+			background-color: black;
+			/*position: relative;*/
+		}
+
+		.banner h1{
+			font-size: 54px;
+			color: #fff;
+			position: absolute;
+			top: 330px;
+			width: 1200px;  
+			left: 30%; 
+			margin-left: -200px;
+			text-align: center;
+			font-family: 'Montserrat', sans-serif;
+		}
+		.banner span{
+			color: #2340AD;
+		}
+
+		.container{
+			position: relative;
+		}
+		
+		.cloud3 {
+			top: 160px;
+			left: 589px;
+			position: absolute;
+		}
+		.cloud2 {
+			top: 217px;
+			left: 359px;
+			position: absolute;
+		}
+		.cloud1 {
+			top: 225px;
+			left: 444px;
+			position: absolute;
+		}
+		.Tree {
+			top: 531px;
+			right: 357px;
+			position: absolute;
+		}
+		.banner p{
+			color: #fff;
+			font-size: 15px;
+			position: absolute;
+			top: 723px;
+			width: 1200px;  
+			left: 30%; 
+			margin-left: -200px;
+			text-align: center;
+		}
+		.scroll{
+			position: absolute;
+			top: 765px;
+			width: 10px;  
+			left: 61.3%; 
+			margin-left: -200px;
+			text-align: center;
+		}
+		.main{
+			position: relative;
+		}
+		
+		.main .about{
+			position: absolute;
+			top: 50%;
+            left: 50%;
+            width: 1300px;
+            height: 2500px;
+            transform: translate(-50% , -50%);
+            margin-top: 1300px;
+            z-index: -10;
+		}
+		.curtain_call{
+			position: absolute;
+			margin-top: 300px;
+			margin-left: 380px;
+			z-index: -10;
+
+			/* animation-name: ; */
+		}
+
+		/* 커튼콜 애니메이션 */
+
+		.about_textbox{
+			margin-top: 500px;
+			position: absolute;
+			width: 680px;
+			margin-left: 870px;
+		}
+
+		.main h1{
+			font-family: 'Montserrat', sans-serif;
+			font-size: 17px;
+			position: absolute;
+			font-weight: 900;
+		}
+
+		.main p{
+			width: 671px;
+			font-size: 16px;
+			position: absolute;
+			margin-top: 40px;
+		}
+		.main h2{
+			margin-top: 170px;
+			font-size: 16px;
+			font-weight: 300;
+		}
+		.main .bold{
+			font-weight: 900;
+		}
+
+		.main h3{
+			position: absolute;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 54px;
+			margin-left: 380px;
+			margin-top: 920px;
+		}
+		.main .youtube{
+			position: absolute;
+			width: 1140px;
+			height: 600px;
+			margin-left: 380px;
+			margin-top: 1000px;
+			z-index: -10;
+		}
+		.viewing_tip{
+			position: absolute;
+			width: 450px;
+			height: 200px;
+			margin-left: 400px;
+			margin-top: 1800px;
+			z-index: -10;
+
+		}
+		.viewing_tip h4{
+			position: absolute;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 54px;
+		}
+		.viewing_tip p{
+			position: absolute;
+			font-size: 16px;
+			margin-top: 80px;
+		}
+
+		.viewing_{
+			position: absolute;
+			/*width: 450px;
+			height: 200px;*/
+			margin-left: 1000px;
+			margin-top: 1650px;
+			z-index: -10;
+
+			animation-name: up-down;
+			animation-duration: infinite;
+			animation-delay: 3s;
+
+		}
+
+		@keyframes up-down{
+			0%{
+				transform: rotate(0deg);
+			}
+
+			50%{
+				transform: rotate(360deg);
+			}
+
+			100%{
+				transform: rotate(0deg);
+			}
+		}
+
+		h5{
+			position: absolute;
+			font-size: 16px;
+			font-weight: 600px;
+			margin-top: 2280px;
+			top: 50%;
+            left: 50%;
+            transform: translate(-50% , -50%);
+		}
+		.next_{
+			position: absolute;
+			/* top: 50%;
+            left: 50%;
+            transform: translate(-50% , -50%); */
+            margin-top: 2310px;
+            z-index: -10;
+			margin-left: 44.5%;
+
+		}
+
+
+
+
+
+
+
+		footer{
+			position: absolute;
+
+		    margin-top: 2600px;
+
+		    width:100%;
+
+		    height:225px;   
+
+		    background:#000000;
+		}
+
+		footer p{
+			/*position: absolute;*/
+			/*margin-top: 2400px;*/
+			font-size: 12px;
+			color: #fff;
+			font-weight: 400;
+			text-align: center;
+			line-height: 225px;
+		}
+		
+		/*footer{
+			background-color: #000000;
+
+			height: 225px;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			margin-top: 100px;
+		}
+		footer h5{
+			font-family: 'Roboto', sans-serif;
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 130%;
+			color: #ffffff;
+		}
+*/
+
+
+	</style>
+</head>
+<body>
+	
+	
+	<header class="header">
+		
+		<a href="#"><img class="logo" src="logo_white.svg"></a>	
+			<ul>
+				<li><a href="#">About</li>
+				<li><a href="#">Product design</a></li>
+				<li><a href="#">UI/UX design</a></li>
+				<li ><a href="#">Epilogue</a></li>
+				<li class="guest"><a href="#">Guest book</a></li>
+				
+			</ul>
+				
+	</header>
+
+	<div class="banner">
+		<div class="container">
+			<div class="cloud_all">
+				<img src="cloud_3.svg" class="cloud3">
+				<img src="cloud_2.svg" class="cloud2">
+				<img src="cloud_big.svg" class="cloud1">
+			</div>
+			<h1 data-aos="fade-down" data-aos-easing="ease-in" data-aos-duration="900"><span>2021 KPU</span><br>FACULTY OF DESIGN ENGINEERING<br>GRADUATION EXHIBITION 2021</h1>
+			<img src="Tree.svg" class="Tree">
+			<img src="scroll.svg" class="scroll">
+			<p>scroll</p>
+		</div>
+	</div>
+
+
+	<div class="main">
+		<img src="about_.svg" class="about">
+		<img src="curtain_call.svg" class="curtain_call" data-aos="fade-right" >
+		<div class="about_textbox" data-aos="fade-left"  >
+			<h1>MEDIA & PRODUCT DESIGN GRADUATION EXHIBITION 2021 </h1>
+			<p><b class="bold">《커튼콜》</b>은  뮤지컬, 오페라, 연극 등의 공연이 끝난 후 출연진들이 관객들의 박수와 찬사에 답하기 위해 다시 무대 위에 오르는 것. 2021년 KPU 미디어&제품 디자인 공학부 졸업전시에서는 4년 동안의 긴 여정에 대한 행보와 그들의 노고를 녹여낸, 작품이라는 하나의 ‘무대’위에서 막이 내린 커튼을 걷어올려 관객들의 환호와 찬사를 받기 위한 자리 입니다.</p>
+
+
+	        <h2>미래를 위해 열심히 달려온 서로를 격려하고, 더 큰 사회로 나아가 무궁무진하게 발전할 우리들의 모습을 기록한 전시회인 만큼, 앞으로 2부가 더욱 기대되는 졸업생들이 공연을 마치며 한단계 도약할 수 있는 초석이 될 작품들을 즐겁게 관람하시길 바랍니다.</h2>
+	    </div>
+
+	    <h3 data-aos="fade-right" >Introduction video</h3>
+	    <iframe class="youtube"   data-aos="fade-left"  width="560" height="315" src="https://www.youtube.com/embed/-esqlmrJxZE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+	    <div class="viewing_tip"  data-aos="fade-right" >
+	    	<h4>Viewing Tips!</h4>
+	    	<p><b>《관람 TIP!》</b><br>
+				4년의 기간을 배움으로, 1년 반이라는 실습 및 구현으로 노력한만큼<br>
+				모든 학생들의 작품을 관람하시도록 이벤트가 준비되어 있습니다!<br>
+				작품을 관람하기 전과 후 차이가 있으니 퍼즐을 맞추듯 즐겁게 관람을<br>
+				즐겨주시기 바랍니다 :)</p>
+	    </div>
+
+	    <img src="viewing_.svg" class="viewing_" data-aos="zoom-in" data-aos-easing="ease-out-cubic">
+
+	    <h5>다음관으로 이동해주세요!</h5>
+	    <a href="../메인화면/Main home.html"><img src="next.svg" class="next_" data-aos="flip-up"></a>
+	    
+
+	</div>
+
+	<!-- <div class="cont"> -->
+	
+
+
+
+
+	<footer>
+		<p>Copyright© 2020 KPU DESIGN ENGINEERING. ALL RIGHTS RESERVED.</p>
+
+	</footer>
+
+
+	<script>
+		AOS.init({
+			easing: 'ease-out-back',
+			duration: 1000
+		});
+	 
+	</script> 
+
+	
+</body>
+</html>

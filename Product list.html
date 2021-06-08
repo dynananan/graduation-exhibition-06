@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Product Design</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+	<style type="text/css">
+		
+				* {
+			box-sizing: border-box;
+			padding: 0;
+			margin: 0;
+
+
+
+		}
+
+		.header {
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 800;
+			position: fixed;
+			border: 2px solid black;
+			background-color: white;
+			display: flex;
+			align-items:center;
+    		margin-right: auto;
+    		margin-left: auto;
+    		flex-wrap: nowrap;
+    		width: 100vw;
+    		justify-content: space-between;
+			background: white;
+    		
+			z-index: 10;
+
+
+		}
+
+		.header img {
+			height: 3.3vw;
+			float: left;
+		}
+
+
+		.header ul{
+			list-style: none;
+			display: flex;
+		}
+
+
+		.header li {
+			
+			border-left:2px solid black; 
+			padding-left: 20px;
+			
+		}
+
+		.header a{
+			color: inherit;
+			font-size: 1em;
+			text-decoration: none;
+			line-height: 3.38vw;
+
+
+		}
+
+		.header li:hover{
+			background-color: #2340AD;
+			color: white;
+
+		}
+
+		.header li:not(:last-child) {
+			padding-right: 20px;
+		}
+
+		.header li:nth-child(6) {
+			border-right: 2px solid rgb(0, 0, 0);
+			padding-right: 1.04vw; 
+			
+
+		}
+
+		.header-svg  {
+			margin-top: 8.2vw;
+			margin-left: 15.72vw;
+			height: 300px;
+		
+		}
+
+		.cont{
+			
+			height: 100vw;
+			padding-top:3.9vw;
+		}
+
+		.logo{
+			margin-left: 15.2vw;
+			padding-left: 20px;
+			padding-right: 20px;
+			
+		}
+
+		.guest{
+			margin-right: 15.7vw;
+		}
+
+
+		.container1{
+			display: flex;
+			justify-content: center; 
+			flex-wrap: wrap;
+			margin-top: 80px;
+
+			
+		}
+		.RESEARCH{
+
+			width: 1240px;
+			height: 1080px;
+		}
+
+		/* 호버시 보이는 입장하기 */
+		.info{
+			
+			display: block;
+			margin-right: auto;
+			margin-left: auto;
+			margin-bottom: auto;
+			margin-top: 120px;
+
+			text-align: center;
+
+			color: white;
+			
+
+			padding-top: 16px;
+			padding-bottom: 16px;
+			width: 60%;
+			border : 1px solid white;
+		
+
+			opacity: 0;
+			transition: opacity 0.5s ease;
+		}
+
+		
+		
+
+		.news-2{
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+
+			margin-top: 8vh;
+
+
+
+
+
+
+		}
+		.news-2 a{
+			width: 300px;
+			height: 300px;
+			margin-top: 10px;
+
+			text-decoration: none;
+
+			position: relative;
+		} 
+
+		.news-2 a:hover .info{
+		     opacity: 0.8;
+		     
+		}
+
+
+		.news-2 a:hover {	
+		    background-image: linear-gradient(rgba(18,31,151), rgba(18,31,151)); 
+		    opacity: 80%;
+		    
+		  }  
+
+		
+
+		.news-2 .item1-1{
+			background-image:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(https://i.pinimg.com/originals/37/79/07/37790716ea8574770657c88706ce8cbd.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+		.news-2 .item1-2{
+			background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url(https://image.isu.pub/180120175405-dce7df4ed9a2fb09b6ab6b4d946e1b20/jpg/page_1.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+
+			overflow: hidden;
+		}
+		.news-2 .item1-3{
+			background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url(https://www.mytemplate.org/document/product-design-resume-of-product-design-portfolio-sebastian-halin-2018-of-product-design-resume-1.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+
+			overflow: hidden;
+		}
+
+		.news-2 .item1-4{
+			background-image:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(https://image.slidesharecdn.com/industrialdesignportfoliolr-100704211828-phpapp01/95/industrial-design-portfolio-1-728.jpg?cb=1278278327);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+
+			overflow: hidden;
+		}
+
+		.news-2 .item1-5{
+			background-image:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(https://images.squarespace-cdn.com/content/v1/5281bd62e4b0c046bfac162c/1566953933134-S1O806YGDIGUDY9SLWD6/ke17ZwdGBToddI8pDm48kNIz01GxeNglza_traDdevsUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKck_3oyjxD2E6g656zntaR4vQBwPCV_Yc9BnFEdXAQ6xzMr4wPFfphDwEQcs_2fgoE/Station-Lantern-02.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+
+			overflow: hidden;
+		}
+
+		.news-2 .item1-6{
+			background-image:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(https://www.designdirectory.com/user_files/company_files/thumbnails/frm_thumbnail_9452_9739_PU0m8KmlT2Tlon9EbERPeJcsb.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+
+			overflow: hidden;
+		}
+
+		.news-2 .item1-7{
+			background-image:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(https://images.squarespace-cdn.com/content/v1/5cab5d4a7a1fbd1d5eb609b5/1560457061425-9L47JVTAW2HNLVIGYFT7/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/ICC-industrial-design-automotive-style.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+
+			overflow: hidden;
+		}
+
+		.news-2 .item1-8{
+			background-image:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(https://i.pinimg.com/originals/8e/22/c3/8e22c3a317ed369ee4a184137d0ecf2b.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+
+			overflow: hidden;
+		}
+		.news-2 .item1-9{
+			background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(https://academics.design.ncsu.edu/departments/wp-content/uploads/2017/03/secure-Pratik-Shrirang-Bendale.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+
+			overflow: hidden;
+		}
+
+		.news-2 .item1-10{
+			background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(https://academics.design.ncsu.edu/departments/wp-content/uploads/2017/03/secure-Pratik-Shrirang-Bendale.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+
+			overflow: hidden;
+		}
+
+		.news-2 .item1-11{
+			background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(https://academics.design.ncsu.edu/departments/wp-content/uploads/2017/03/secure-Pratik-Shrirang-Bendale.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+
+			overflow: hidden;
+		}
+
+		.news-2 .item1-12{
+			background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(https://academics.design.ncsu.edu/departments/wp-content/uploads/2017/03/secure-Pratik-Shrirang-Bendale.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+
+			overflow: hidden;
+		}
+
+		.conB {
+			position: absolute;
+			/*float: right;*/
+			background-color: black;
+			color: white;
+			padding: 80px 50px;
+			font-size: 1em;
+			letter-spacing: 0.2em;
+
+			margin-top: 10.5vh;
+			margin-left: 1110px;
+
+			line-height: 30px;
+
+			font-family: 'Montserrat', sans-serif;
+
+			text-align: center;
+
+			
+
+		}
+
+		.conB::after{
+			content: '';
+			width: 5px;
+			height: 80px;
+			background-color: black;
+			position: absolute;
+			left: 0;
+			top: -70px;
+
+
+		}
+
+		.conB::before{
+			content: '';
+			width: 5px;
+			height: 80px;
+			background-color: black;
+			position: absolute;
+			right: 0;
+			top: -70px;
+
+
+		}
+
+		/*.conB:after{
+			content: "";
+			position: absolute;
+			width: 5px;
+			height: 2vh;
+			background-color: black;
+			left: 0;
+			top: -50px;
+		}*/
+
+		.top-stick{
+			
+			transform: translate(700px,40px);
+			overflow: hidden;
+			margin-top: 10vh;
+			width: 1200px;
+		
+		}
+
+		footer{
+			background-color: #000000;
+
+			height: 225px;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			margin-top: 140px;
+		}
+		footer h5{
+			font-family: 'Roboto', sans-serif;
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 130%;
+			color: #ffffff;
+		}
+
+		.deco-line{
+			position: absolute;
+			  width: 100%;
+			  border-bottom: 3px solid #161616;
+			  margin-top:  520px;
+			  display: block;
+			  }
+
+		
+
+	</style>
+</head>
+<body>
+	
+	
+	<header class="header">
+		
+			<a href="../메인화면/Main home.html"><img class="logo" src="LOGO (1).svg"></a>	
+			<ul>
+				<li><a href="../전시소개/About.html">About</li>
+		        <li><a href="../작품나열/Product list.html">Product design</a></li>
+		        <li><a href="../작품나열 uiux/uiux list.html">UI/UX design</a></li>
+		        <li ><a href="../에필로그/History.html">Epilogue</a></li>
+		        <li class="guest"><a href="../코멘트/flower animation.html">Guest book</a></li>
+				
+			</ul>
+
+			
+			
+	</header>
+
+	<div class="under-line"></div>
+
+
+	<svg class="top-stick" width="819" height="18" viewBox="0 0 819 18" fill="none" xmlns="http://www.w3.org/2000/svg" >
+	<rect x="9" y="6" width="1000" height="6" fill="#1B1B1B"/>
+	<circle cx="9" cy="9" r="9" fill="#1B1B1B"/>
+	</svg>
+
+
+	<section class="conB" data-aos="fade-left">
+		<div class="text-box">
+			<p>For people,<br> technology and businessBased <br>
+			on a broad understanding <br>Implement creative products <br>
+			Faculty of Industrial<br> Design Engineering.
+			</p>
+		</div>
+	</section>
+	
+	<div class="deco-line"></div>
+
+
+	<section class="conA">
+		<img class="header-svg" src="product design.svg" width="40%" data-aos="zoom-out-up">
+	</section>
+
+		<div class="container1">
+			<div class="RESEARCH">
+				<div class="news-2">
+					
+					<a href="#" class="item1-1">
+						<div class="info"><p>입장하기</p></div>
+					</a>	
+
+					<a href="#" class="item1-2">
+						<div class="info"><p>입장하기</p></div>
+					</a>
+
+					<a href="#" class="item1-3">
+						<div class="info"><p>입장하기</p></div>
+					</a>
+
+					<a href="#" class="item1-4">
+						<div class="info"><p>입장하기</p></div>
+					</a>
+
+					<a href="#" class="item1-5">
+						<div class="info"><p>입장하기</p></div>
+					</a>
+
+					<a href="#" class="item1-6">
+						<div class="info"><p>입장하기</p></div>
+					</a>
+
+					<a href="#" class="item1-7">
+						<div class="info"><p>입장하기</p></div>
+					</a>
+
+					<a href="#" class="item1-8">
+						<div class="info"><p>입장하기</p></div>
+					</a>
+
+					<a href="#" class="item1-9">
+						<div class="info"><p>입장하기</p></div>
+					</a>
+
+					<a href="#" class="item1-10">
+						<div class="info"><p>입장하기</p></div>
+					</a>
+
+					<a href="#" class="item1-11">
+						<div class="info"><p>입장하기</p></div>
+					</a>
+
+					<a href="#" class="item1-12">
+						<div class="info"><p>입장하기</p></div>
+					</a>
+
+
+
+					
+					
+				</div>
+			</div>
+		</div>
+
+
+
+	<footer>
+		<h5>Copyright© 2020 KPU DESIGN ENGINEERING. ALL RIGHTS RESERVED.</h5>
+	</footer>
+
+
+<script>
+    AOS.init({
+        easing: 'ease-out-back',
+        duration: 1000
+    });
+ 
+</script>  
+	
+
+	
+</body>
+</html>

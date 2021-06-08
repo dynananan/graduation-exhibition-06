@@ -1,0 +1,492 @@
+    <head>
+ 
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Guest Book</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        
+   
+    </head>
+<style type="text/css">
+        
+@keyframes move 
+{from{ top: 200px; 
+        transform: rotate(0deg);}
+ to{ top:900px; 
+  transform: rotate(40deg)} 
+ }
+
+/*헤더*/
+
+.header {
+      
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 800;
+			position: fixed;
+			border: 2px solid black;
+			background-color: white;
+			display: flex;
+			align-items:center;
+    	margin-right: auto;
+    	margin-left: auto;
+    	flex-wrap: nowrap;
+    	width: 100vw;
+    	justify-content: space-between;
+			background: rgb(255, 255, 255);
+      z-index: 3;
+      height: 60px;
+    	z-index: 10;
+
+		}
+
+		.header img {
+			height: 3.3vw;
+			float: left;
+		}
+
+
+		.header ul{
+			list-style: none;
+			display: flex;
+		}
+
+
+		.header li {	
+			border-left:2px solid black; 
+			padding-left: 20px;
+			
+		}
+
+		.header a{
+			color: inherit;
+			font-size: 1em;
+			text-decoration: none;
+			line-height: 3.38vw;
+		}
+
+		.header li:hover{
+			background-color: #2340AD;
+			color: white;
+
+		}
+
+		.header li:not(:last-child) {
+			padding-right: 20px;
+		}
+
+		.header li:nth-child(6) {
+			border-right: 2px solid rgb(0, 0, 0);
+			padding-right: 1.04vw; 
+			
+
+		}
+
+		.header-svg  {
+			margin-top: 5.2vw;
+			margin-left: 5.72vw;
+		
+		}
+
+		.cont{
+			
+			height: 100vw;
+			padding-top:3.9vw;
+		}
+
+		.logo{
+			margin-left: 15.2vw;
+			padding-left: 20px;
+			padding-right: 20px;
+		
+		}
+
+		.guest{
+			margin-right: 15.7vw;
+		}
+/**/
+
+
+body{
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+ }
+
+.flower{
+  position: absolute;
+  width:150px;
+  height:50px;
+  background:#000;
+  color:#fff;
+
+}
+.flowera{
+  position: absolute;
+  width:150px;
+  height:150px;
+  animation-iteration-count:1;
+  animation-fill-mode: forwards;
+  animation-timing-function:ease-in;
+}
+
+
+#send{
+
+  width:210px;
+  height:70px;
+  border:  2px solid black;
+  background:rgb(0, 0, 0);
+  color:#fff;
+  position: absolute;
+  margin-top: 678px;
+  left: 1409px;
+  text-align: center;
+  line-height: 70px;
+  font-size: 15px;
+
+}
+
+
+.commentinput{
+  margin-top: 678px;
+  position: absolute;
+  width:1107px ;
+  height: 70px;
+  background-color: rgb(255, 255, 255);
+  border:  2px solid black;
+  margin-left: 302px;
+}
+
+.head{
+  padding-top: 150px;
+  margin-left: 302px;
+}
+.head>b{
+  font-size: 54px;
+}
+.head>p{
+  font-size: 15px;
+}
+
+.flowerboxa{
+  position: absolute;
+  width: 431px;
+  height: 548px;
+  margin-left: 302px;
+  border: 2px solid #171717;
+  text-align: center;
+  margin-top: 52px;
+}
+
+.flowerboxB{
+  width: 431px;
+  height: 548px;
+  margin-left: 745px;
+  border: 2px solid #171717;
+  text-align: center;
+  margin-top: 52px;
+  position: absolute;
+}
+.flowerboxC{
+  width: 431px;
+  height: 548px;
+  margin-left: 1188px;
+  border: 2px solid #171717;
+  text-align: center;
+  margin-top: 52px;
+  position: absolute;
+}
+
+.flowera> p{
+ padding-top: 150px;
+}
+
+.flowera>img{
+  top: 200px;
+  left: 50%;
+  position: absolute;
+  margin:  0 0 0 60px;
+}
+
+.flowerfour{
+  position: absolute;
+  top: 386px;
+  width: 800px;
+  /*left: -307px;*/
+  left: 60%;
+  margin: 0 400 0 -400px;
+}
+
+.textinput{
+  width: 1107px;
+  height: 70px;
+  background-color: white;
+  border-color: white;
+}
+.textinput:focus{outline: none;}
+
+.flowerB> p{
+ padding-top: 150px;
+}
+
+.flowerB>img{
+  top: 200px;
+  }
+.flowerC> p{
+ padding-top: 150px;
+}
+
+.flowerC>img{
+  top: 200px;
+  left: 50%;
+  
+  position: absolute;
+  margin:  0 0 0 -70px;
+}
+.flowerB{
+ position: absolute;
+  animation-duration:4s;
+  animation-iteration-count:1;
+  animation-fill-mode: forwards;
+  animation-timing-function:ease-in;
+  top: 200px;
+  left: 50%;
+  right: 50%;
+  margin: 0 86.5 0 -86.5;
+}
+
+
+/*말풍선
+*/
+#menu {
+  top: 1400px;
+  left: 35%;
+    width: 860px;
+    margin: 40px auto;
+    text-align: center;
+    position: absolute;
+    height: 150px;
+    background-color: rgba(194, 31, 31, 0);
+}
+
+#menu {
+
+  padding: ;-right: 80px;
+}
+
+
+#menu div {
+    height: 150px;
+
+    background-color: rgba(35, 255, 255, 00);
+    position: absolute;
+
+    font-size: 20pt; 
+
+}
+.popa{
+  margin-left: 300px;
+  margin-top: 100px;
+}
+.popb{
+  margin-top: 140px;
+  margin-left: 450px;
+}
+.popc{
+  left: 30px;
+  top: 180px;
+}
+span {
+    height: 500px;
+    width: 80px;
+    padding: 2px 16px;
+    cursor: pointer;
+    background-color: lime;
+}
+
+.arrow_box {
+  display: none;
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  padding: 8px;
+  left: 0;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;  
+  border-radius: 8px;
+  background: #2340AD;
+  color: #fff;
+  font-size: 14px;
+
+  margin-bottom: 120px;
+  
+}
+
+/*말풍선삼각형*/
+.arrow_box:after {
+  position: absolute;
+  bottom: -30%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -10px;
+  border: solid transparent;
+  border-color: rgba(51, 51, 51, 0);
+  border-bottom-color: #2340AD;
+  border-width: 10px;
+  pointer-events: none;
+  content: " ";
+  transform: rotate(180deg);
+}
+
+
+
+span:hover + p.arrow_box {
+  display: block;
+}
+</style>
+
+
+
+
+	<header class="header">
+		
+    <a href="#"><img class="logo" src="LOGO (1).svg"></a>	
+    <ul>
+      <li><a href="#">About</li>
+      <li><a href="#">Product design</a></li>
+      <li><a href="#">UI/UX design</a></li>
+      <li ><a href="#">Epilogue</a></li>
+      <li class="guest"><a href="#">Guest book</a></li>
+      
+    </ul>
+
+    
+    
+</header> 
+<body>
+ 
+
+<div class="head"><b>SENDING MESSAGE</b>
+  <p>꽃다발을 선택 후 고생한 학생들에게 응원과 격려의 메시지 한줄 보내주세요.</p>
+</div>
+
+
+<div class="flowerboxa"> 
+ 
+  <div class="flowera"> 
+    <img src='https://ifh.cc/g/YHuBjn.png' ></a>
+   </div>  
+ <p>  TYPE A </p>
+ <input type="radio" class="radio" name="radio">
+</div>
+
+<div class="flowerboxB"> 
+ 
+  <div class="flowerB"> 
+    <img src='https://ifh.cc/g/wOPmdo.png' ></a>
+    
+   </div>  
+ <p>  TYPE B </p>
+ <input type="radio" class="radioB" name="radio">
+</div>
+
+<div class="flowerboxC"> 
+ 
+  <div class="flowerC"> 
+    <img src='https://ifh.cc/g/U7FOut.png' ></a>
+   </div>  
+ <p>  TYPE C </p>
+ <input type="radio" class="radioC" name="radio">
+</div>
+
+  <div id="send"> SEND</div>
+
+<div class="commentinput">
+  <input type="text" class="textinput">
+
+  <img class ="flowerfour" src="https://i.postimg.cc/rpg4yRkD/4.png" 
+  width="799px"   usemap="#map" ></a>
+</div>
+
+
+
+
+<!---말풍선 넣기-->
+<div id="menu">
+  <div class="popa"></p> <span>ㅤㅤㅤㅤ</span>
+    <p class="arrow_box"> 현나~~ 졸업 넘모넘모 축하해!
+  </div>
+  <div class="popb"> <span>ㅤㅤㅤㅤㅤ</span>
+    <p class="arrow_box">수혀니~~짱 멋지다잉?~</p>
+  </div>
+  <div class="popc"> <span>ㅤㅤㅤㅤ</span>
+    <p class="arrow_box">자경!! 졸업 추카츄~.~</p>
+  </div>
+</div>
+
+
+
+
+</body>
+
+<script type="text/javascript">
+
+   AOS.init({
+        easing: 'ease-out-back',
+        duration: 1000
+    });
+
+
+/*애니메이션*/
+    $(function(){
+  $('#send').click(function(){ 
+      $('.flowerB').css('animation-name','move');
+  });
+});
+
+$(function(){
+  $('#send').click(function(){ 
+      $('.flowerB').css('animation-name','move');
+  });
+});
+
+
+
+/*컬러 체인지*/
+$(function(){
+$('.radioB').click(function(){ 
+    $('.flowerboxB').css('background-color','#2340AD');
+    $('.flowerboxB').css('color','white');
+});
+});
+
+$(function(){
+$('.radio').click(function(){ 
+    $('.flowerboxa').css('background-color','#2340AD');
+    $('.flowerboxa').css('color','white');
+});
+});
+
+$(function(){
+$('.radio').click(function(){ 
+    $('.flowerboxa').css('background-color','#2340AD');
+    $('.flowerboxa').css('color','white');
+});
+});
+
+$(function(){
+$('.radioc').click(function(){ 
+    $('.flowerboxC').css('background-color','#2340AD');
+    $('.flowerboxC').css('color','white');
+});
+});
+</script>
+
+
+</html>
